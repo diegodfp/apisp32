@@ -17,7 +17,7 @@ import com.copower.apisp32.sensordata.domain.service.SensorDataService;
 import jakarta.servlet.http.HttpServletResponse;
 
 @RestController
-@RequestMapping("/api/sensor-data")
+@RequestMapping("/api/data-sensor")
 public class SensorDataController {
     private final SensorDataService sensorDataService;
 
