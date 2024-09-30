@@ -1,0 +1,6 @@
+com\copower\apisp32\Apisp32Application.class
+com\copower\apisp32\sensordata\infrastructure\repository\SensorDataRepository.class
+com\copower\apisp32\sensordata\domain\service\SensorDataService.class
+com\copower\apisp32\sensordata\infrastructure\controller\ConfigController.class
+com\copower\apisp32\sensordata\domain\entity\SensorData.class
+com\copower\apisp32\sensordata\infrastructure\controller\SensorDataController.class

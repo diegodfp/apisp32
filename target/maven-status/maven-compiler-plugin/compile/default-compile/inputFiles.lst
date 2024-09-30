@@ -1,0 +1,6 @@
+C:\Users\Usuario\Documents\SpringBootProjects\apisp32\src\main\java\com\copower\apisp32\Apisp32Application.java
+C:\Users\Usuario\Documents\SpringBootProjects\apisp32\src\main\java\com\copower\apisp32\sensordata\domain\entity\SensorData.java
+C:\Users\Usuario\Documents\SpringBootProjects\apisp32\src\main\java\com\copower\apisp32\sensordata\domain\service\SensorDataService.java
+C:\Users\Usuario\Documents\SpringBootProjects\apisp32\src\main\java\com\copower\apisp32\sensordata\infrastructure\controller\ConfigController.java
+C:\Users\Usuario\Documents\SpringBootProjects\apisp32\src\main\java\com\copower\apisp32\sensordata\infrastructure\controller\SensorDataController.java
+C:\Users\Usuario\Documents\SpringBootProjects\apisp32\src\main\java\com\copower\apisp32\sensordata\infrastructure\repository\SensorDataRepository.java
