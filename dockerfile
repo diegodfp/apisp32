@@ -13,7 +13,7 @@ RUN apk add --no-cache maven \
     && mvn clean package
 
 # Copia el archivo JAR generado en la imagen final
-COPY target\apisp32-0.0.1-SNAPSHOT.jar apisp32.jar
+COPY target/apisp32-0.0.1-SNAPSHOT.jar apisp32.jar
 
 # Define el comando de entrada
 ENTRYPOINT ["java", "-jar", "apisp32.jar"]
