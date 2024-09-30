@@ -14,7 +14,7 @@ import java.util.*;
 import com.copower.apisp32.sensordata.domain.entity.SensorData;
 import com.copower.apisp32.sensordata.domain.service.SensorDataService;
 
-@CrossOrigin(origins = "https://cheery-dasik-60d356.netlify.app")
+
 @RestController
 @RequestMapping("/api/sensor-data")
 public class SensorDataController {
@@ -23,13 +23,13 @@ public class SensorDataController {
         this.sensorDataService = sensorDataService;
     }
 
-    @CrossOrigin(origins = "https://cheery-dasik-60d356.netlify.app")
+    @CrossOrigin(origins = "https://sp32frontend.onrender.com")    
     @GetMapping
     public List<SensorData> getAllSensorData() {
         return sensorDataService.getAllSensorData();
     }
 
-    @CrossOrigin(origins = "https://cheery-dasik-60d356.netlify.app")
+   
     @PostMapping
     public ResponseEntity<SensorData> createSensorData(@RequestBody SensorData sensorData) {
         SensorData savedData = sensorDataService.saveSensorData(sensorData);
