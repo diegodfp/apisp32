@@ -16,25 +16,21 @@ import com.copower.apisp32.sensordata.domain.service.SensorDataService;
 
 import jakarta.servlet.http.HttpServletResponse;
 
-
 @RestController
 @RequestMapping("/api/sensor-data")
 public class SensorDataController {
     private final SensorDataService sensorDataService;
+
     public SensorDataController(SensorDataService sensorDataService) {
         this.sensorDataService = sensorDataService;
     }
 
-    @CrossOrigin(origins = "https://sp32frontend.onrender.com")    
-    @GetMapping
+    @GetMapping("/list")
     public List<SensorData> getAllSensorData(HttpServletResponse response) {
-        response.setHeader("Access-Control-Allow-Origin", "https://sp32frontend.onrender.com");
-        response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-        response.setHeader("Access-Control-Allow-Headers", "*");
+
         return sensorDataService.getAllSensorData();
     }
 
-   
     @PostMapping
     public ResponseEntity<SensorData> createSensorData(@RequestBody SensorData sensorData) {
         SensorData savedData = sensorDataService.saveSensorData(sensorData);
