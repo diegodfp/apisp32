@@ -36,4 +36,9 @@ public class SensorDataController {
         SensorData savedData = sensorDataService.saveSensorData(sensorData);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedData);
     }
+
+    @GetMapping("/averages")
+    public Map<String, Double> getTodayAverages() {
+        return sensorDataService.getTodayAverages();
+    }
 }
